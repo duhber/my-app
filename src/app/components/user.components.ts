@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
       </ul>
       <form (submit)="addHobby(hobby.value)">
         <label>Add Hobby: </label><br />
-        <input type="text" #hobby /><br />
+        <input type="text" #hobby placeholder="hobby" /><br />
       </form>
     </div>
     <hr>
@@ -65,7 +65,6 @@ export class UserComponent  {
   addHobby(hobby:string){
     console.log(hobby);
     this.hobbies.push(hobby);
-    hobby='';
   }
   deleteHobby(i:number){
     console.log(i);
