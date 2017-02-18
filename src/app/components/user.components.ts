@@ -41,6 +41,7 @@ export class UserComponent  {
   address:address;
   hobbies: string[];
   showHobbies:boolean;
+
   constructor(){
     this.name = 'H C Lalduhbera';
     this.email = 'duhbera@gmail.com';
